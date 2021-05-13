@@ -18,46 +18,41 @@
   src: url(./assets/lato/Lato-Heavy.ttf);
 }
 
-@font-face {
-  font-family: Lato-Medium;
-  src: url(./assets/lato/Lato-Medium.ttf);
-}
-
-@font-face {
-  font-family: Lato-Hairline;
-  src: url(./assets/lato/Lato-Hairline.ttf);
-}
-
-@font-face {
-  font-family: Lato-Regular;
-  src: url(./assets/lato/Lato-Regular.ttf);
-}
-
-@font-face {
-  font-family: Lato-Thin;
-  src: url(./assets/lato/Lato-Thin.ttf);
-}
+@import url("./media.css");
 
 body {
-  margin: 0px;
-  padding: 0px;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;;
 }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #E5E5E5;
+}
+
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
 
 .header {
   display: flex;
-  width: 1020px;
-  height: 89px;
+  justify-content: space-between;
   background: #2d303a;
   border-bottom: 6px solid #323746;
 }
 
 .logo {
-  width: 124px;
   height: 25px;
-  margin: 0 0 0 0px;
+  margin: 0px;
   padding: 29px 0 35px 40px;
   font-style: normal;
   font-weight: bold;
@@ -77,13 +72,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 375px;
-  height: 14px;
   margin: 0px;
-  padding: 42px 0 33px 441px;
+  padding: 42px 40px 33px 0;
 }
 
 .marker {
-  list-style-type: disc;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
   color: white;
   font-style: normal;
   font-weight: bold;
@@ -94,9 +90,16 @@ body {
   font-family: "Lato-Light";
 }
 
-#home-no-marker {
-  list-style-type: none;
-  font-family: "Lato-Light";
+.dot {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.marker:hover {
+  cursor: pointer;
+  text-decoration: underline #18a0fb;
   color: #f06c64;
 }
 
@@ -104,68 +107,54 @@ h1:hover {
   cursor: pointer;
   text-decoration: underline #18a0fb;
 }
-.marker:hover {
-  cursor: pointer;
-  text-decoration: underline #18a0fb;
-}
 
-/* .img_ifones {
-  display: block;
-  width: 1020px;
-  height: 600px;
-  left: 0px;
-} */
 .slider {
-  width: 1020px;
-  height: 594px;
-  left: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
   background: #F06C64;
   border-bottom: 6px solid #EA676B;
-}
-
-.slider-controls {
-  display: flex;
-  width: 940px;
-  height: 27px;
-  margin: -315px 40px 284px 40px; 
-}
-
-.arrow-right {
-  padding: 0px;
-  margin: 0 0 0 0;
-}
-
-.arrow-right:hover {
-  cursor: pointer;
-}
-
-.arrow-left {
-  padding: 0px;
-  margin: 0 908px 0 0;
-}
-
-.arrow-left:hover {
-  cursor: pointer;
 }
 
 .img_slider-content {
   width: 796px;
   height: 483px;
-  margin: 54px 112px 57px 112px;
+  padding: 54px 112px 57px 112px;
+}
+
+.slider-controls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.arrow-right {
+  margin-right: 40px;
+}
+
+.arrow-right:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.arrow-left {
+  margin-left: 40px;
+}
+
+.arrow-left:hover {
+  cursor: pointer;
+  background-color: white;
 }
 
 .our_services {
-  width: 1020px;
   height: 494px;
-  left: 0px;
   background: #f2f2f2;
   border-bottom: 6px solid #ffffff;
 }
 
 .our_services_title {
-  width: 172px;
-  height: 36px;
-  margin: 0px 0px 18px 0px;
+  margin: 0px;
   padding: 59px 0 0 40px;
   font-style: normal;
   font-weight: 900;
@@ -181,7 +170,6 @@ h2:hover {
 }
 
 .our_services-description {
-  width: 936px;
   height: 47px;
   margin-top: 18px;
   padding: 0 44px 0 40px;
@@ -193,11 +181,13 @@ h2:hover {
   font-family: "Lato-Light";
 }
 
-.services-conteiner {
+.services-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: 228px;
   margin: 60px 0px 52px 40px;
+  overflow: hidden;
 }
 
 .item-card {
@@ -242,17 +232,14 @@ h2:hover {
 }
 
 .portfolio {
-  width: 1020px;
   height: 864px;
-  left: 0px;
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
 }
 
 .portfolio_title {
-  width: 130px;
   height: 40px;
-  margin: 0px 0px 13.87px 0px;
+  margin: 0px;
   padding-left: 40px;
   padding-top: 59px;
   font-family: "Lato-Heavy";
@@ -264,8 +251,6 @@ h2:hover {
 }
 
 .portfolio_description {
-  width: 936px;
-  height: 46.95px;
   margin: 13.87px 44px 0px 40px;
   font-family: "Lato-Light";
   font-style: normal;
@@ -275,15 +260,13 @@ h2:hover {
   color: #767e9e;
 }
 
-.portfolio_words_conteiner {
-  height: 22px;
+.portfolio_words_container {
   display: flex;
   flex-direction: row;
-  margin: 0px 0px 0px 40px;
+  padding: 12px 0px 0px 40px;
 }
 
 .box_word_All {
-  margin-top: -5px;
   margin-right: 10px;
   width: 28px;
   height: 22px;
@@ -306,7 +289,6 @@ h2:hover {
 }
 
 .box_word_WebDesign {
-  margin-top: -5px;
   margin-right: 10px;
   width: 79px;
   height: 22px;
@@ -329,7 +311,6 @@ h2:hover {
 }
 
 .box_word_GraphicDesign {
-  margin-top: -5px;
   margin-right: 10px;
   width: 95px;
   height: 22px;
@@ -352,7 +333,6 @@ h2:hover {
 }
 
 .box_word_Artwork {
-  margin-top: -5px;
   margin-right: 10px;
   width: 58px;
   height: 22px;
@@ -378,8 +358,9 @@ h2:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: 601px;
   overflow: hidden;
-  margin: 13px 0px 68px 40px;
+  margin: 18px 0px 68px 40px;
 }
 
 .img_portfolio {
@@ -390,21 +371,16 @@ h2:hover {
 
 .img_portfolio:hover {
   cursor: zoom-in;
-  border: 1px solid #bbbbbb;
 }
 
 .about_us {
-  width: 1020px;
   height: 727.98px;
-  left: 0px;
   background: #f2f2f2;
   border-bottom: 5.08px solid #ffffff;
 }
 
 .about_us_title {
-  width: 130px;
-  height: 40px;
-  margin: 0px 0px 14px 0px;
+  margin: 0px;
   padding: 59px 0 0 40px;
   font-family: "Lato-Heavy";
   font-style: normal;
@@ -415,9 +391,7 @@ h2:hover {
 }
 
 .about_us_description {
-  width: 936px;
-  height: 47px;
-  margin: 14px 0px 57px 40px;
+  margin: 18px 44px 0px 40px;
   font-family: "Lato-Light";
   font-style: normal;
   font-weight: 300;
@@ -427,35 +401,29 @@ h2:hover {
 }
 
 .about_us_conteiner {
-  margin: 0px 40px 67.98px 40px;
-}
-
-.about_us_img {
   display: flex;
   flex-direction: row;
+  margin: 44px 40px 67.98px 40px;
 }
 
-.about_us_photo {
-  width: 300px;
-  height: 300px;
-  margin: 0px 20px 17px 0px;
-}
-
-.about_us_name {
-  height: 126px;
-  display: flex;
-  flex-direction: row;
-}
-
-.info_about_us {
+.about_us_card {
   width: 300px;
   margin: 0px 20px 0px 0px;
 }
 
-.name {
-  width: 300px;
-  height: 20px;
-  margin: 0px 0px 7px 0px;
+.about_us_photo {
+  margin: 0px;
+}
+
+.about_us_photo:hover {
+  cursor: zoom-in;
+}
+
+.about_us_name {
+  margin: 13px 0px 0px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-family: "Lato-Heavy";
   font-style: normal;
   font-weight: 900;
@@ -464,10 +432,8 @@ h2:hover {
   color: #666d89;
 }
 
-.name_description {
-  width: 300px;
-  height: 55px;
-  margin: 0px 20px 12px 0px;
+.about_us_name-description {
+  margin: 10px 0px 0px 0px;
   font-family: "Lato-Light";
   font-style: normal;
   font-weight: normal;
@@ -480,9 +446,7 @@ h2:hover {
 .social_media {
   display: flex;
   flex-direction: row;
-  width: 300px;
-  height: 32px;
-  margin: 12px 0px 0px 0px;
+  margin: 22px 0px 0px 0px;
 }
 
 .border_social_media {
@@ -516,17 +480,13 @@ h2:hover {
 }
 
 .get_a_Quote {
-  width: 1020px;
   height: 648px;
-  left: 0px;
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
 }
 
 .get_a_Quote_title {
-  width: 167px;
-  height: 40px;
-  margin: 0px 0px 13.87px 0px;
+  margin: 0px;
   padding: 59px 0 0 40px;
   font-family: "Lato-Heavy";
   font-style: normal;
@@ -537,9 +497,8 @@ h2:hover {
 }
 
 .get_a_Quote_description {
-  width: 936px;
   height: 47px;
-  margin: 14.01px 44px 57px 40px;
+  margin: 18px 44px 57px 40px;
   font-family: "Lato-Light";
   font-style: normal;
   font-weight: 300;
@@ -625,6 +584,8 @@ h2:hover {
 
 .send:hover {
     cursor: pointer;
+    color: #d6564f; 
+    background-color: #F0D8D9;
 }
 
 .contact_Information {
@@ -634,7 +595,6 @@ h2:hover {
 }
 
 .contact_Information_title {
-  width: 168px;
   height: 20px;
   margin: 0px 0px 7px 0px;
   font-family: "Lato-Heavy";
@@ -646,7 +606,6 @@ h2:hover {
 }
 
 .contact_Information_description {
-  width: 300px;
   height: 87px; 
   margin: 7px 0px 22px 0px;
   font-family: "Lato-Light";
@@ -695,25 +654,29 @@ h2:hover {
     font-size: 12px;
     line-height: 22px;
     text-align: justify;
-    vertical-align: top;
+    vertical-align: bottom;
     color: #F0D8D9;
+    text-decoration: none;
+}
+
+.contact-info:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .footer {
-  width: 1020px;
   height: 76px;
-  left: 0px;
   background: #2D303A;
 }
 
 .footer-container {
-  padding: 22px 34px 22px 40px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 22px 34px 22px 40px;
 }
 
 .footer-info {
-  width: 118px;
   margin: 7.5px 0px 7.5px 0px;
   font-family: "Lato-Heavy";
   font-style: normal;
@@ -729,3 +692,4 @@ h2:hover {
   height: 32px;
   margin: 0px 0px 0px 668px;
 }
+
