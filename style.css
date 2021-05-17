@@ -39,7 +39,7 @@ body {
 
 .container {
   width: 1020px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 
@@ -95,6 +95,7 @@ body {
   height: 2px;
   border-radius: 50%;
   background-color: white;
+  margin-right: 15px;
 }
 
 .marker:hover {
@@ -266,7 +267,7 @@ h2:hover {
   padding: 12px 0px 0px 40px;
 }
 
-.box_word_All {
+.box_word_all {
   margin-right: 10px;
   width: 28px;
   height: 22px;
@@ -282,13 +283,13 @@ h2:hover {
   border-radius: 5px;
 }
 
-.box_word_All:hover {
+.box_word_all:hover {
   cursor: pointer;
   color: #dedede;
   border: 1px solid #bbbbbb;
 }
 
-.box_word_WebDesign {
+.box_word_webdesign {
   margin-right: 10px;
   width: 79px;
   height: 22px;
@@ -304,13 +305,13 @@ h2:hover {
   border-radius: 5px;
 }
 
-.box_word_WebDesign:hover {
+.box_word_webdesign:hover {
   cursor: pointer;
   color: #dedede;
   border: 1px solid #bbbbbb;
 }
 
-.box_word_GraphicDesign {
+.box_word_graphicdesign {
   margin-right: 10px;
   width: 95px;
   height: 22px;
@@ -326,13 +327,13 @@ h2:hover {
   border-radius: 5px;
 }
 
-.box_word_GraphicDesign:hover {
+.box_word_graphicdesign:hover {
   cursor: pointer;
   color: #dedede;
   border: 1px solid #bbbbbb;
 }
 
-.box_word_Artwork {
+.box_word_artwork {
   margin-right: 10px;
   width: 58px;
   height: 22px;
@@ -348,7 +349,7 @@ h2:hover {
   border-radius: 5px;
 }
 
-.box_word_Artwork:hover {
+.box_word_artwork:hover {
   cursor: pointer;
   color: #dedede;
   border: 1px solid #bbbbbb;
@@ -479,13 +480,13 @@ h2:hover {
   padding: 28.12% 28.13% 28.12% 28.12%;
 }
 
-.get_a_Quote {
+.get_a_quote {
   height: 648px;
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
 }
 
-.get_a_Quote_title {
+.get_a_quote_title {
   margin: 0px;
   padding: 59px 0 0 40px;
   font-family: "Lato-Heavy";
@@ -496,7 +497,7 @@ h2:hover {
   color: #f0d8d9;
 }
 
-.get_a_Quote_description {
+.get_a_quote_description {
   height: 47px;
   margin: 18px 44px 57px 40px;
   font-family: "Lato-Light";
@@ -507,7 +508,7 @@ h2:hover {
   color: #F0D8D9;
 }
 
-.get_a_Quote_conteiner {
+.get_a_quote_conteiner {
   height: 199px;
   display: flex;
   flex-direction: row;
@@ -588,13 +589,13 @@ h2:hover {
     background-color: #F0D8D9;
 }
 
-.contact_Information {
+.contact_information {
   width: 300px;
   height: 199px;
   margin: 0px;
 }
 
-.contact_Information_title {
+.contact_information_title {
   height: 20px;
   margin: 0px 0px 7px 0px;
   font-family: "Lato-Heavy";
@@ -605,7 +606,7 @@ h2:hover {
   color: #f0d8d9;
 }
 
-.contact_Information_description {
+.contact_information_description {
   height: 87px; 
   margin: 7px 0px 22px 0px;
   font-family: "Lato-Light";
@@ -692,4 +693,3 @@ h2:hover {
   height: 32px;
   margin: 0px 0px 0px 668px;
 }
-
