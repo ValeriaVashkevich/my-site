@@ -1,0 +1,176 @@
+@media (max-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .img_slider-content {
+        width: 599.48px;
+        height: 363.74px;
+        padding: 40.97px 84.33px 42.54px 84.19px;
+    }
+
+    .img_content {
+        width: 599.48px;
+        height: 363.74px;
+    }
+
+    .arrow-right {
+        margin-right: 26.86px;
+      }
+      
+      .arrow-left {
+        margin-left: 29.42px;
+      }
+
+    .our_services {
+        height: 679.14px;
+    }
+
+    .our_services-description {
+        height: 99px;
+    }
+
+    .services-container {
+        height: 418px;
+        margin: 28px 0px 64px 41px;
+      }
+
+      .item-card {
+        margin: 0px 53px 39px 0px;
+      }
+
+      .portfolio {
+        height: 1094.4px;
+      }
+
+      .portfolio_title {
+        padding-left: 41px;
+      }
+
+      .portfolio_description {
+        margin: 14px 32px 0px 41px;
+      }
+
+      .portfolio_words_container {
+        padding: 12px 0px 0px 41px;
+      }
+
+      .portfolio_img_conteiner {
+        height: 794px;
+        margin: 28px 0px 65.4px 39px;
+      }
+
+      .img_portfolio {
+        width: 216.19px;
+        height: 183.76px;
+        margin: 0px 19.65px 19.65px 0px;
+      }
+
+      .about_us {
+        height: 669px;
+      }
+
+      .about_us_title {
+        padding: 52px 0 0 40px;
+      }
+
+      .about_us_description {
+        margin: 14px 40px 0px 40px;
+      }
+
+      .about_us_conteiner {
+        margin: 44px 40px 75px 40px;
+      }
+
+      .about_us_card {
+        width: 218.94px;
+        margin: 0px 14.6px 0px 0px;
+      }
+
+      .about_us_photo {
+        width: 218.94px;
+        height: 218.94px;
+      }
+
+      .img_about_us {
+        width: 218.94px;
+        height: 218.94px;
+      }
+
+      .about_us_name {
+        margin: 12.06px 0px 0px 0px;
+      }
+
+      .about_us_name-description {
+        margin: 5px 0px 0px 0px;
+      }
+
+      .social_media {
+        margin: 11px 0px 0px 0px;
+      }
+
+      .get_a_quote {
+        height: 631px;
+      }
+
+      .get_a_quote_title {
+        padding: 53px 0 0 42px;
+      }
+
+      .get_a_quote_description {
+        height: 96px;
+        margin: 14px 37px 19px 42px;
+      }
+
+      .get_a_quote_conteiner {
+        height: 38px;
+        margin: 19px 37px 39.21px 39px;
+      }
+
+      .form-container {
+        width: 442px;
+        margin: 0px 29px 0px 0px;
+      }
+      
+      .input_text {
+        margin: 0px 0px 12px 0px;
+        padding: 0px 0px 0px 9.68px;
+      }
+
+      .free_text {
+        padding: 9px 0 0 10px;
+      }
+
+      .send {
+        margin: 17px 0px 0px 0px;
+      }
+
+      .contact_information {
+        width: 221px;
+        height: 225px;
+      }
+
+      .contact_information_title {
+        height: 15px;
+        margin: 0px 0px 5px 0px;
+      }
+
+      .contact_information_description {
+        height: 142px; 
+        margin: 5px 0px 0px 0px;
+      }
+
+      .contacts {
+        height: 63px;
+        margin: 0px 0px 0px 0px;
+      }
+
+      .footer-container {
+        padding: 22px 42px 22px 39px;
+      }
+
+      .footer_social_media {
+        height: 32px;
+        margin: 0px 0px 0px 417px;
+      }
+}
