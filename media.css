@@ -174,3 +174,67 @@
         margin: 0px 0px 0px 417px;
       }
 }
+
+@media (max-width: 375px) {
+  .container {
+    width: 375px;
+  }
+
+  .header {
+    height: 71px;
+  }
+
+  .logo {
+    height: 24px;
+    font-size: 19.6875px;
+    line-height: 24px;
+    padding: 24px 0 23px 148px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header_burger-menu {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 26px;
+  }
+
+  .line_burger-menu {
+    width: 25px;
+    height: 2.4px;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 6.4px;
+  }
+
+  .line_burger-menu:last-child {
+    margin-bottom: 0px;
+  }
+
+  .slider {
+    height: 218.38px;
+  }
+
+  .img_slider-content {
+    width: 292.72px;
+    height: 177.61px;
+    padding: 20.01px 41.66px 20.77px 41.11px;
+  }
+
+  .img_content {
+    width: 292.72px;
+    height: 177.61px;
+  }
+
+  .arrow-right {
+    margin-right: 9.64px;
+  }
+  
+  .arrow-left {
+    margin-left: 10.25px;
+  }
+
+}
